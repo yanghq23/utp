@@ -1,10 +1,10 @@
 <template>
-  <router-view />
-  <van-tabbar route>
-    <van-tabbar-item to="/home" icon="home-o">首页</van-tabbar-item>
-    <van-tabbar-item icon="search">分类</van-tabbar-item>
-    <van-tabbar-item icon="setting-o">我的</van-tabbar-item>
-  </van-tabbar>
+  <van-search
+    v-model="value"
+    placeholder="请输入搜索关键词"
+    input-align="center"
+  />
+  <div>我是首页</div>
 </template>
 
 <script>
@@ -15,10 +15,8 @@ export default {
       active: 0,
     };
   },
-  methods: {
-  },
+  methods: {},
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
