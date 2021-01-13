@@ -1,6 +1,8 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import About from "../views/about/Index.vue";
+import Classify from "../views/classify/Index.vue";
+
+import Mine from "../views/mine/Index.vue";
 
 const router = createRouter({
   history: createWebHashHistory(), // hash模式：createWebHashHistory，history模式：createWebHistory
@@ -10,9 +12,13 @@ const router = createRouter({
       component: Home,
     },
     {
-      path: "/about",
-      component: About,
+      path: "/classify",
+      component: Classify,
     },
+    {
+      path: "/mine",
+      component: Mine,
+    }
   ],
 });
 
